@@ -7,7 +7,7 @@
 
 bootstrap:
 	curl -O http://beta.quicklisp.org/quicklisp.lisp
-	sbcl --load quicklisp.lisp --eval '(quicklisp-quickstart:install) (ql:add-to-init-file) (ql:quickload "clx") (ql:quickload "cl-ppcre") (ql:quickload "alexandria") (sb-ext:quit)'
+	sbcl --load quicklisp.lisp --eval '(quicklisp-quickstart:install)' --eval '(ql:add-to-init-file)' --eval '(ql:quickload "clx")' --eval '(ql:quickload "cl-ppcre")' --eval '(ql:quickload "alexandria")' --eval '(sb-ext:quit)'
 	autoreconf --force --install
 
 bootstrap-reinstall:
